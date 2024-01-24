@@ -10,25 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Auqatoria
-{
+{w 
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 window1 = new Window1();
-            window1.Show();
+            Button tb = e.Source as Button;
+            tb.Background = Brushes.Green;
+            Mainname.Content = nePage1;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Button tb = e.Source as Button;
+            tb.Background = Brushes.Red;
         }
     }
 }
