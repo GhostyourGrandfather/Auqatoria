@@ -20,9 +20,9 @@
         <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Vertical" Height="auto" >
             <StackPanel Orientation="Horizontal">
                 <Label HorizontalAlignment="Center" VerticalAlignment="Center" Content="Введите бокс"></Label>
-                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="184" Text="Введите номер..."></TextBox>
+                <TextBox x:Name="BoxForBox" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="184" Text="Введите номер..."></TextBox>
             </StackPanel>
-            <TextBlock Text="Ваш номер: "></TextBlock>
+            <TextBlock x:Name="TextBoxBlock" Text="Ваш номер: "></TextBlock>
             <Button Content="Потвердить" Height="50" Click="Button_Click"></Button>
             <Button Content="Завершить смену" Height="50" Click="Button_Click_1"></Button>
         </StackPanel>
