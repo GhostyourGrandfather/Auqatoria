@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace Auqatoria
-{w 
+{ 
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
     /// </summary>
@@ -28,7 +28,9 @@ namespace Auqatoria
         {
             Button tb = e.Source as Button;
             tb.Background = Brushes.Green;
-            Mainname.Content = nePage1;
+            //Mainname.Content = nePage1;
+            TextBoxBlock.Text += BoxForBox.Text;
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
