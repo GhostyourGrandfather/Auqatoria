@@ -1,0 +1,24 @@
+﻿<Window x:Class="Auqatoria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Auqatoria"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Менеджер" HorizontalAlignment="Center"  Grid.Row="1"  Width="200" Height="50" VerticalAlignment="Center" Background="DeepSkyBlue"/>
+        <Button Grid.Column="1" Content="Работник" HorizontalAlignment="Center"  Width="200" Height="50"  Grid.Row="1" VerticalAlignment="Center" Background="Pink"/>
+        <Button Grid.Column="2" Content="Пользователь" HorizontalAlignment="Center" Width="200" Height="50" Grid.Row="1" VerticalAlignment="Center" Background="Gray"/>
+        <Image Margin="23,4,21,33" Source="/19e1dbb47c10fb7134c6ba0957d2a83d.png" Stretch="Fill" Grid.Column="1"/>
+    </Grid>
+</Window>
