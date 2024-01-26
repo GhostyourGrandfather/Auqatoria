@@ -13,30 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace Auqatoria
-{ 
+{
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Button tb = e.Source as Button;
-            tb.Background = Brushes.Green;
-            Mainname.Content = new Page1();
-            TextBoxBlock.Text += BoxForBox.Text;
 
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Button tb = e.Source as Button;
-            tb.Background = Brushes.Red;
         }
     }
 }
